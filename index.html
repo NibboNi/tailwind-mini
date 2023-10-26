@@ -5,11 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>Simple Tailwind Starter</title>
+  <title>Tailwind Mini-projects</title>
 </head>
 
-<body>
-  <h1 class="text-3xl">Simple Tailwind Starter</h1>
+<body class="bg-[#030201] text-white">
+  <h1 class="text-3xl font-semibold capitalize text-center py-5">Tailwind Mini-projects</h1>
+  <ul class="flex flex-col gap-3 text-center mt-10">
+    <li>
+      <a href=""
+        class="text-2xl text-slate-300 hover:underline hover:text-white hover:drop-shadow duration-200 underline-offset-2 transition-all">E-mail
+        pricing
+        card</a>
+    </li>
+    <li>
+      <a href=""
+        class="text-2xl text-slate-300 hover:underline hover:text-white hover:drop-shadow duration-200 underline-offset-2 transition-all">Product
+        modal</a>
+    </li>
+    <li>
+      <a href=""
+        class="text-2xl text-slate-300 hover:underline hover:text-white hover:drop-shadow duration-200 underline-offset-2 transition-all">Image
+        gallery</a>
+    </li>
+    <li>
+      <a href=""
+        class="text-2xl text-slate-300 hover:underline hover:text-white hover:drop-shadow duration-200 underline-offset-2 transition-all">Pricing
+        grids</a>
+    </li>
+    <li>
+      <a href=""
+        class="text-2xl text-slate-300 hover:underline hover:text-white hover:drop-shadow duration-200 underline-offset-2 transition-all">Login
+        modal</a>
+    </li>
+  </ul>
+  <footer class="text-center absolute bottom-3 left-1/2">
+    &copy;
+  </footer>
+
+  <script>
+    document.querySelector("footer").innerText += `\n${new Date().getFullYear()}`;
+  </script>
+
 </body>
 
 </html>
