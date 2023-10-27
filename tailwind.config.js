@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "ping-slow": "ping 1.2s linear infinite",
+      },
+    },
   },
   plugins: [],
 };
