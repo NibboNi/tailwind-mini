@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.open-menu::before {
+  top: 50%;
+  transform: rotate(45deg);
+  animation: openRotateTop 0.2s ease-in-out;
+}
+
+.open-menu::after {
+  top: 50%;
+  transform: rotate(-45deg);
+  animation: openRotateBottom 0.2s ease-in-out;
+}
+
+.close-menu::before {
+  top: 0%;
+  transform: rotate(0deg);
+  animation: closeRotateTop 0.2s ease-in-out;
+}
+
+.close-menu::after {
+  bottom: 0%;
+  transform: rotate(0deg);
+  animation: closeRotateBottom 0.2s ease-in-out;
+}
+
+.open {
+  height: 170px;
+  animation: grow 0.5s ease-in-out;
+}
+
+.close {
+  height: 0px;
+  animation: grow 0.5s ease-in-out reverse;
+}
+
+@keyframes grow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 170px;
+  }
+}
+
+@keyframes openRotateTop {
+  0% {
+    top: 0%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes openRotateBottom {
+  0% {
+    bottom: 0%;
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 50%;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes closeRotateTop {
+  0% {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    top: 0%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes closeRotateBottom {
+  0% {
+    bottom: 50%;
+    transform: rotate(-45deg);
+  }
+  100% {
+    bottom: 0%;
+    transform: rotate(0deg);
+  }
+}
