@@ -16,8 +16,8 @@
 
 <body>
   <nav
-    class="flex flex-col items-start justify-between px-8 py-2 lg:flex-row lg:items-center lg:justify-around bg-zinc-950 text-white">
-    <div class="flex items-center justify-around gap-4">
+    class="fixed before:absolute before:block lg:before:hidden before:w-full before:h-full before:top-0 before:left-0 before:bg-zinc-950 z-20 w-full flex flex-col items-start justify-between px-8 py-2 lg:flex-row lg:items-center lg:justify-around bg-zinc-950 text-white">
+    <div class="flex items-center justify-around gap-4 z-20 bg-zinc-950">
       <a href="./index.html">
         <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
           <title>file_type_tailwind</title>
@@ -39,7 +39,7 @@
     <div id="mobileMenu"
       class="h-4 w-8 lg:hidden absolute top-6 right-5 before:block before:absolute before:w-full before:h-0.5 before:bg-white after:block after:absolute after:bottom-0 after:w-full after:h-0.5 after:bg-white">
     </div>
-    <div id="navLinks" class="hidden flex-col gap-1">
+    <div id="navLinks" class="p-4 flex flex-col gap-2 lg:hidden absolute left-0 w-full bg-zinc-950 bottom-full -z-10">
       <a href="./index.html">Home</a>
       <a href="./email-subscribe-card.html">Emal Subscribe Card</a>
       <a href="./product-modal.html">Product Modal</a>

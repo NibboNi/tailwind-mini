@@ -9,6 +9,39 @@
 </head>
 
 <body>
+  <nav
+    class="fixed before:absolute before:block lg:before:hidden before:w-full before:h-full before:top-0 before:left-0 before:bg-zinc-950 z-20 w-full flex flex-col items-start justify-between px-8 py-2 lg:flex-row lg:items-center lg:justify-around bg-zinc-950 text-white">
+    <div class="flex items-center justify-around gap-4 z-20 bg-zinc-950">
+      <a href="./index.html">
+        <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
+          <title>file_type_tailwind</title>
+          <path
+            d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+            style="fill:#44a8b3" />
+        </svg>
+      </a>
+      <a href="./index.html" class="hidden lg:inline text-slate-200 hover:text-white hover:drop-shadow-xl">Home</a>
+    </div>
+    <div class="hidden lg:flex gap-5">
+      <a href="./email-subscribe-card.html" class="text-slate-200 hover:text-white hover:drop-shadow-xl">Email Subscribe
+        Card</a>
+      <a href="./product-modal.html" class="text-slate-200 hover:text-white hover:drop-shadow-xl">Product Modal</a>
+      <a href="./image-gallery.html" class="text-slate-200 hover:text-white hover:drop-shadow-xl">Image Gallery</a>
+      <a href="./pricing-grid.html" class="text-slate-200 hover:text-white hover:drop-shadow-xl">Pricing Grids</a>
+      <a href="./login-modal.html" class="text-slate-200 hover:text-white hover:drop-shadow-xl">Login Modal</a>
+    </div>
+    <div id="mobileMenu"
+      class="h-4 w-8 lg:hidden absolute top-6 right-5 before:block before:absolute before:w-full before:h-0.5 before:bg-white after:block after:absolute after:bottom-0 after:w-full after:h-0.5 after:bg-white">
+    </div>
+    <div id="navLinks" class="p-4 flex flex-col gap-2 lg:hidden absolute left-0 w-full bg-zinc-950 bottom-full -z-10">
+      <a href="./index.html">Home</a>
+      <a href="./email-subscribe-card.html">Emal Subscribe Card</a>
+      <a href="./product-modal.html">Product Modal</a>
+      <a href="./image-gallery.html">Image Gallery</a>
+      <a href="./pricing-grid.html">Pricing Grids</a>
+      <a href="./login-modal.html">Login Modal</a>
+    </div>
+  </nav>
   <!-- Background container -->
   <div class="flex items-center justify-center h-screen bg-zinc-900">
     <!-- Card -->
@@ -36,6 +69,8 @@
       </div>
     </div>
   </div>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
