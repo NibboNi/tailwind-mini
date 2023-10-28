@@ -5,3 +5,5 @@
 - Product modal
 - Image gallery
 - Login modal
+
+[preview](https://nibboni.github.io/tailwind-mini/)
